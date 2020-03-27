@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "The Fullstack Hoodie",
+    "description": "Lightweight, breathable hoodie with the Fullstack Crest. Guaranteed to keep you looking fresh while warm.",
+    "price": 19.99
+  },
+  {
+    "id": "2",
+    "title": "The Fullstack Tee",
+    "description": "Stay comfortable and cool with the first fulltstack fitted cap, featuring a normal bill and medium crown",
+    "price": 15.99
+  },
+  {
+    "id": "3",
+    "title": "The Fullstack Fitted Cap",
+    "description": "Stay comfortable and cool with the first fulltstack fitted cap, featuring a normal bill and medium crown",
+    "price": 15.99
+  },
+  {
+    "id": "4",
+    "title": "The Fullstack Jacket",
+    "description": "Keep warm and protected with the rugged, durable Fullstack lightweight jacket",
+    "price": 19.99
+  }
+]
