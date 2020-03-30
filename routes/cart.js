@@ -64,7 +64,7 @@ const cartRoutes = (app, fs) => {
           data[userId] = req.body;
 
           writeFile(JSON.stringify(data, null, 2), () => {
-              res.status(200).send(`products id:${userId} updated`);
+              res.status(200).send(data);
           });
       },
           true);
@@ -78,10 +78,8 @@ const cartRoutes = (app, fs) => {
 
           // add the new user
           let userId = req.params.id;
-          console.log(userId);
           let modifiedData = data.filter((item) => {
-              if(item.id !== userId) {
-                  
+              if(item.id != userId) {
                   return true
               }
               return false
@@ -94,6 +92,7 @@ const cartRoutes = (app, fs) => {
       },
           true);
   });
+
 };
 
 module.exports = cartRoutes;

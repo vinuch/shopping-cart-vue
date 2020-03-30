@@ -27,6 +27,8 @@
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.tag:hover{
+  cursor: pointer;
+}
 </style>

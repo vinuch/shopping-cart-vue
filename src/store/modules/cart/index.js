@@ -19,6 +19,7 @@ const actions = {
   addCartItem ({ commit }, cartItem) {
     let quantity = { "quantity": 1}
     cartItem = {...cartItem, ...quantity}
+    cartItem.id = cartItem.length;
     axios.post('/api/cart', cartItem).then((response) => {
       commit('UPDATE_CART_ITEMS', response.data)
     });
@@ -29,7 +30,7 @@ const actions = {
     }); 
   },
   removeAllCartItems ({ commit }) {
-    axios.post('/api/cart').then((response) => {
+    axios.delete('/api/cart/delete').then((response) => {
       commit('UPDATE_CART_ITEMS', response.data)
     });
  }

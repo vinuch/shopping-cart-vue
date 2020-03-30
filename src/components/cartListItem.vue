@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="parent">
       <p class="cart-item--title is-inline">{{ cartItem.title }}</p>
       <div class="is-pulled-right">
         <span @click="addCartItem(cartItem)"><i class="fa fa-arrow-circle-up cart-item--modify" ></i></span>
@@ -36,6 +36,11 @@ import { mapActions } from 'vuex'
   }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.cart-item--modify {
+  cursor: pointer;
+}
+.parent {
+  padding: .7rem 0;
+}
 </style>
